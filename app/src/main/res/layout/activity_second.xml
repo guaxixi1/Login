@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_register_background"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/register_shape">
+
+        <TextView
+            android:id="@+id/activity_second_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/activity_second_back"
+            android:text="注册"
+            android:textColor="#fcfdff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity_second_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@mipmap/ic_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="18dp">
+
+        <ImageView
+            android:id="@+id/activity_second_card_nickname_image"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_register_nickname" />
+
+        <EditText
+            android:id="@+id/activity_second_card_nickname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/activity_second_card_nickname_image"
+            android:background="#fff"
+            android:hint="请输入昵称"
+            android:textColorHint="#999"
+            android:textSize="14sp"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dbd8d8" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="@dimen/margin">
+
+        <ImageView
+            android:id="@+id/activity_second_card_phone_image"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_register_phone" />
+
+        <EditText
+            android:id="@+id/activity_second_card_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/activity_second_card_phone_image"
+            android:background="#fff"
+            android:hint="请输入手机号"
+            android:textColorHint="#999"
+
+            android:textSize="14sp"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dbd8d8" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="18dp">
+
+        <ImageView
+            android:id="@+id/activity_second_card_pwd_image"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_register_pwd" />
+
+        <EditText
+            android:id="@+id/activity_second_card_pwd_edit"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/activity_second_card_pwd_image"
+            android:background="#fff"
+            android:hint="请输入密码"
+            android:textColorHint="#999"
+            android:textSize="14sp"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dbd8d8" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="@dimen/margin">
+
+        <ImageView
+            android:id="@+id/activity_second_card_gender_image"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_register_gender" />
+
+        <TextView
+            android:id="@+id/activity_second_card_sex_result"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/activity_second_card_gender_image"
+            android:gravity="center_vertical"
+            android:text="男"
+            android:textColor="#000" />
+        <ImageView
+            android:id="@+id/activity_second_card_sex_open_choose"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/ic_choose"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_second_card_sex_choose"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@id/activity_second_card_gender_image"
+            android:visibility="gone"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_second_card_sex_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/activity_second_card_gender_image"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="男"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/activity_second_card_sex_woman"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/activity_second_card_gender_image"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="女"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="#dbd8d8" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="18dp"
+        android:background="#dbd8d8" />
+
+    <TextView
+
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:padding="8dp"
+        android:id="@+id/activity_second_card_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="注册"
+        android:foreground = "?attr/selectableItemBackground"/>
+</LinearLayout>
